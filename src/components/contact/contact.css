@@ -1,0 +1,210 @@
+.contact {
+  /* background-color: var(--background-one); */
+  max-height: 1405px;
+  /* overflow: hidden; */
+}
+
+.appContainer {
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+
+.appContainer h3 {
+  padding-top: 2%;
+  color: black;
+  z-index: 100;
+}
+
+/* .contactPageContentWrapper {
+
+} */
+
+.contactPageContainer {
+  /* position: relative; */
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+
+  font-family: var(--fontsPrimary);
+  /* 
+   display: flex; */
+}
+
+.contactPageContainer .textLeft {
+  /*  flex: 2; */
+  color: var(--colorsSecondary);
+  display: flex;
+  flex-direction: column;
+}
+.contactPageContainer .textLeft h3 {
+  font-size: 30px;
+}
+.contactPageContainer .textLeft h4 {
+  font-size: 25px;
+}
+.contactPageContainer .textLeft p {
+  font-size: 20px;
+}
+.contactPageContainer .inputRight {
+  margin: 70px 0 0 0;
+
+  /*  flex: 3; */
+  font-family: var(--fontsPrimary);
+  border-radius: 5px;
+  padding: 20px;
+  /*  position: absolute;
+  left: 50%; */
+  bottom: 5px;
+}
+
+.contactPageContainer input[type="text"],
+.contactPageContainer input[type="email"],
+.contactPageContainer select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 0px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: var(--background-two);
+}
+.contactPageContainer input[type="text"] {
+  width: 100%;
+  cursor: pointer;
+  font-family: var(--fontsPrimary);
+  padding-left: 20px;
+}
+.contactPageContainer input[type="email"] {
+  font-family: var(--fontsPrimary);
+  margin-top: 10px;
+}
+.contactPageContainer input[type="text"]:focus {
+  outline: none;
+
+  border: 1px solid var(--colorsPrimary);
+  transition: 0.5s;
+}
+.contactPageContainer .textArea {
+  margin-top: 10px;
+  font-family: var(--fontsPrimary);
+  border: 1px solid #ccc;
+  min-height: 250px;
+  background-color: var(--background-two);
+  top: 100px;
+}
+.contactPageContainer textarea:focus {
+  outline: none;
+  border: 1px solid var(--colorsPrimary);
+}
+.contactPageContainer input[type="email"]:focus {
+  outline: none;
+  border: 1px solid var(--colorsPrimary);
+}
+.contactPageContainer textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: var(--colorsBase);
+  font-size: 14px;
+  resize: none;
+  font-family: var(--fontsPrimary);
+}
+
+.button {
+  width: 100%;
+  height: 50px;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  color: var(--colorsBase);
+  font-family: var(--fontsSecondary);
+  background: var(--background-two);
+  /* position: relative; */
+  z-index: 1;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: var(--colorsSecondary);
+  color: var(--colorsBase);
+  transition: transform 200ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.button:hover::before,
+.button:focus::before {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 768px) {
+  .contactPageWrapper {
+    max-height: none;
+  }
+
+  .appContainer {
+    width: 90vw;
+    overflow: hidden;
+  }
+  .contactPageContainer {
+    flex-direction: column;
+  }
+  .contactPageContainer .textLeft {
+    text-align: center;
+  }
+  .contactPageContainer .textLeft h3 {
+    margin-bottom: 20px;
+  }
+  .contactPageContainer .inputRight {
+    position: relative;
+    /* transform: translateX(-50%); */
+  }
+  .backgroundParallaxImage1 {
+    top: 300px;
+    height: 300px;
+  }
+  .backgroundParallaxImage2 {
+    top: 0px;
+    height: 800px;
+    position: fixed;
+    z-index: 1;
+  }
+}
+
+.showPopUp {
+  position: absolute;
+  background: var(--colorsBase);
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--fontsPrimary);
+  color: var(--colorsSecondary);
+}

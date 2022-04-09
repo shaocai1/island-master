@@ -1,0 +1,167 @@
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+/* .ppp {
+  position: relative;
+  z-index: 11;
+} */
+
+.imgcontainer {
+  width: 300px;
+  height: 300px;
+}
+.img {
+  background-image: url(./doc1.pdf);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: inherit;
+}
+.tootootoo {
+  position: absolute;
+  width: 81vw;
+  height: 95vh;
+  left: -85%;
+  top: 0%;
+  /* transform: translateX(-50%); */
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 11;
+  width: 100%;
+  height: 95%;
+  /* margin-left: -44%;
+  position: absolute;
+  margin-top: -45%; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 12;
+}
+.box1 {
+  /* position: relative; */
+  width: 48%;
+  height: 90%;
+  /* background-color: green; */
+  background-image: url(./doc1.pdf);
+  background-size: cover;
+}
+.box2 {
+  /* position: relative; */
+  width: 48%;
+  height: 90%;
+  /* background-color: red; */
+  background-image: url(/doc2.pdf);
+  background-size: cover;
+}
+
+.image1 {
+  z-index: 10;
+}
+
+.image2 {
+  /* background-image: url("./fake2.jpg"); */
+}
+
+.closeicon {
+  color: white;
+  /* margin-left: 50%; 
+  margin-top: -100%;
+  */
+  width: 36px;
+  height: 36px;
+  margin-top: -15px;
+  z-index: 100;
+}
+
+@media (min-width: 640px) {
+  .tootootoo {
+    width: 81vw;
+    height: 95vh;
+    left: 10%;
+    top: -80%;
+  }
+  .box {
+    width: 100%;
+    flex-direction: column;
+  }
+  .box1 {
+    width: 60%;
+    height: 70%;
+  }
+  .box2 {
+    width: 60%;
+    height: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .tootootoo {
+    width: 81vw;
+    height: 95vh;
+    left: 8%;
+    top: -65%;
+  }
+  .box {
+    width: 100%;
+    flex-direction: column;
+  }
+  .box1 {
+    width: 60%;
+    height: 70%;
+  }
+  .box2 {
+    width: 60%;
+    height: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tootootoo {
+    width: 81vw;
+    height: 95vh;
+    left: -18%;
+    top: -65%;
+  }
+  .box {
+    width: 110%;
+  }
+  .box1 {
+    width: 60%;
+    height: 70%;
+  }
+  .box2 {
+    width: 60%;
+    height: 70%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .tootootoo {
+    width: 81vw;
+    height: 95vh;
+    left: -85%;
+    top: 0%;
+  }
+  .box {
+    width: 100%;
+    height: 95%;
+  }
+  .box1 {
+    width: 48%;
+    height: 90%;
+  }
+  .box2 {
+    width: 48%;
+    height: 90%;
+  }
+}

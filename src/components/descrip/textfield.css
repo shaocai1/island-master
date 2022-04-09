@@ -1,0 +1,28 @@
+.textfield {
+  font-size: 20px;
+  color: white;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.wrapper {
+  background-color: rgba(7, 7, 7, 0.7);
+  margin: 6%;
+  padding: 4%;
+  position: relative;
+}
+
+.title {
+  margin-left: 25%;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  padding: 0;
+}
+@media (min-width: 740px) {
+  .wrapper title {
+    margin-left: 10%;
+  }
+}
